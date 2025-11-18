@@ -14,7 +14,7 @@ test.describe('Assertion Samples', () => {
 		await page.pause();
 	});
 
-	test.only('More Assertions', async ({ page }) => {
+	test('More Assertions', async ({ page }) => {
 		await page.goto('https://www.saucedemo.com/');
 		// Assert Visibility
 		await expect(page.locator('form')).toBeVisible();
